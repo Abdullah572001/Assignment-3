@@ -11,6 +11,19 @@
     <!-- Tailwind CSS + DaisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/a2cf7ce55d.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
 
     <style>
         .font-manrope{
@@ -18,9 +31,48 @@
         }
     </style>
 </head>
-<body>
+<body class="font-manrope">
     <!-- header section -->
-     <header></header>
+     <header class="bg-gradient-to-b from-gray-100 to-gray-50">
+        <!-- Navbar section -->
+         <nav class="md:container md:mx-auto px-4">
+            <div class="py-6">
+                <div class="navbar">
+                    <div class="navbar-start">
+                      <a class="btn btn-ghost text-3xl font-extrabold"><i class="fa-solid fa-arrow-right text-lg -rotate-45 bg-lime-400 rounded-full h-7 w-7"></i>Rinterio</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1">
+                        <li class="font-extrabold"><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end invisible md:visible">
+                        <i class="fa-solid fa-magnifying-glass text-lg bg-white w-9 h-9 flex items-center justify-center rounded-full text-center mr-3"></i>
+                        <i class="fa-solid fa-cart-shopping text-lg bg-white w-9 h-9 flex items-center justify-center rounded-full text-center mr-3"></i>
+                      <a class="btn bg-lime-400 text-xl font-extrabold rounded-3xl">Book Consult<i class="fa-solid fa-arrow-right text-white text-lg -rotate-45 bg-black rounded-full h-7 w-7"></i></a>
+                    </div>
+                    <div class="dropdown w-9 h-9 rounded-full md:ml-3 bg-white lg:invisible">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden flex justify-center items-center">
+                            <i class="fa-solid fa-bars mb-3"></i>
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                          <li><a>Home</a></li>
+                          <li><a>Services</a></li>
+                          <li><a>Portfolio</a></li>
+                          <li><a>Blogs</a></li>
+                          <li><a>Contact Us</a></li>
+                        </ul>
+                      </div>
+                  </div>
+            </div>
+         </nav>
+     </header>
 
     <!-- main section -->
      <main></main>
