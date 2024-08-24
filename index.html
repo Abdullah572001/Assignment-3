@@ -30,6 +30,12 @@
         .font-manrope{
             font-family: "Manrope", sans-serif;
         }
+        .bg-paper{
+            background: url(./assets/bg.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
     </style>
 </head>
 <body class="font-manrope">
@@ -146,7 +152,7 @@
 
          <!-- our latest portfolio section -->
           <div class="bg-white">
-            <div class="md:container md:mx-auto px-4 py-4 lg:px-24 lg:py-24 text-center">
+            <div class="md:container md:mx-auto px-4 py-4 lg:p-24 text-center">
                 <button class="btn bg-gray-100 rounded-3xl"><i class="fa-solid fa-arrow-right"></i>Explore our Latest works</button>
                 <h3 class="text-5xl font-bold my-6">Our Latest Portfolio</h3>
                 <p class="md:max-w-2xl mx-auto mb-8">Our latest barn house portfolio showcases modern rustic designs with open floor plans, exposed beams, and sustainable materials, blending traditional charm with contemporary comfort.</p>
@@ -182,11 +188,28 @@
                     <div class="lg:col-start-10 lg:col-span-3 col-span-12 order-3 lg:order-none border border-[#E9E9E9] rounded-xl p-6">
                         <img src="assets/img5.png" alt="" class="w-full">
                     </div>   
-                    <div class="lg:invisible  col-span-12 order-6 lg:order-none border  rounded-xl p-6">
+                    <div class="lg:hidden  col-span-12 order-6 lg:order-none border  rounded-xl p-6">
                         <img src="assets/img3.png" alt="" class="w-full">
                     </div>
             </div>
           </div>
+
+          <!-- next project section -->
+           <section class="bg-paper">
+            <div class="md:container md:mx-auto p-4 lg:p-24 text-center">
+                <button class="btn bg-lime-100 rounded-3xl"><i class="fa-solid fa-arrow-right"></i>Let’s Connect</button>
+                <h3 class="text-5xl font-bold py-6">Let’s Discuss Next Project</h3>
+                <p class="max-w-2xl mx-auto mb-6">Our next barn house project will blend rustic charm with modern design, featuring open spaces, sustainable materials, and large windows to maximize natural light.</p>
+                <form action="" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <input class="rounded-3xl p-5" type="text" placeholder="First Name*">
+                    <input class="rounded-3xl p-5" type="text" placeholder="Last Name*">
+                    <input class="rounded-3xl p-5" type="number" placeholder="Phone Number*">
+                    <input class="rounded-3xl p-5" type="email" placeholder="Email Number*">
+                    <textarea class="lg:col-span-2 h-60 rounded-3xl p-5" placeholder="Write your message here"></textarea>
+                    <button class="btn bg-lime-400 lg:col-span-2 rounded-3xl">Send Mail<i class="fa-solid fa-arrow-right text-white text-lg -rotate-45 bg-black rounded-full h-7 w-7"></i></button>
+                </form>
+            </div>
+           </section>
      </main>
 
     <!-- footer section -->
